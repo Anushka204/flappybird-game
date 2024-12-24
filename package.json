@@ -1,7 +1,7 @@
 {
 	"name": "flappybird",
 	"scripts": {
-   "build": "esbuild --bundle src/main.js --outfile=public/main.js --minify",
+		"build": "esbuild --bundle src/main.js --outfile=www/scripts/main.js --minify",
    "dev": "esbuild --bundle src/main.js --outfile=public/main.js --servedir=public",
    "bundle": "npm run build && mkdir -p dist && zip -r dist/game.zip public -x \"**/.DS_Store\""
 }
